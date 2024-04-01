@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    /* might not be needed  */
+    display: flex;  
+    justify-content: space-around;
+}
+
+.dropdown {
+    display: block; 
+    background-color: red;
+    position: absolute;
+}
+
+
+.content{
+    /* display: none; */
+    visibility: hidden; /* deactivate invisible hovering */
+    opacity: 0;     /* to enable transition */
+
+    position: absolute;   /* for better position */
+    background-color: grey; 
+
+}
+.dropdown:hover .content{
+    
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;  /* giving hovering second for better performance */
+}
+
+
